@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>310</x>
+      <y>160</y>
+      <w>330</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>Item
+--
+- properties: IDictionary&lt;string, Property&gt;
+--
++/- Name: string
++/- ProductN: string
++/- Producer: ItemProducer
+--
++ GetProperty(name: string): Property
++ SetProperty(name: string, value: string): bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>570</y>
+      <w>360</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>ItemType
+--
+- defaultProperties: IDictionary&lt;string, Property&gt;
+--
++ GetProperty(name: string): Property
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1000</x>
+      <y>180</y>
+      <w>220</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>Property
+--
++/+ Value: string
++/- Name:  string
++/- Type: IPropertyType
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>340</x>
+      <y>550</y>
+      <w>320</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>ItemProducer
+--
++/- Name: string
++/- Email: string
++/- Items: IList&lt;Item&gt;
+--
++ AddItem(item: Item): void //TODO: check again
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>460</x>
+      <y>310</y>
+      <w>50</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>m2=0..*
+m1=1
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;240.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>630</x>
+      <y>230</y>
+      <w>390</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>m1=1
+m2=1..*
+lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;370.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1100</x>
+      <y>280</y>
+      <w>50</w>
+      <h>310</h>
+    </coordinates>
+    <panel_attributes>m1=1
+m2=1..*
+lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;290.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>590</x>
+      <y>310</y>
+      <w>370</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>m1=1..*
+m2=1
+lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0;350.0;260.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>40</y>
+      <w>180</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_CLASS DIAGRAM_
+fontsize=20</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
