@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>10</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>310</x>
-      <y>160</y>
-      <w>330</w>
-      <h>160</h>
+      <x>24</x>
+      <y>184</y>
+      <w>264</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>Item
 --
@@ -24,10 +24,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>930</x>
-      <y>570</y>
-      <w>360</w>
-      <h>100</h>
+      <x>520</x>
+      <y>512</y>
+      <w>288</w>
+      <h>56</h>
     </coordinates>
     <panel_attributes>ItemType
 --
@@ -40,10 +40,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1000</x>
-      <y>180</y>
-      <w>220</w>
-      <h>110</h>
+      <x>576</x>
+      <y>200</y>
+      <w>176</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>Property
 --
@@ -58,10 +58,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>340</x>
-      <y>550</y>
-      <w>320</w>
-      <h>120</h>
+      <x>48</x>
+      <y>496</y>
+      <w>256</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>ItemProducer
 --
@@ -76,23 +76,23 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>460</x>
-      <y>310</y>
-      <w>50</w>
-      <h>260</h>
+      <x>144</x>
+      <y>288</y>
+      <w>40</w>
+      <h>224</h>
     </coordinates>
     <panel_attributes>m2=0..*
 m1=1
 lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;240.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;260.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>630</x>
-      <y>230</y>
-      <w>390</w>
-      <h>40</h>
+      <x>280</x>
+      <y>240</y>
+      <w>312</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>m1=1
 m2=1..*
@@ -102,39 +102,67 @@ lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1100</x>
-      <y>280</y>
-      <w>50</w>
-      <h>310</h>
+      <x>656</x>
+      <y>256</y>
+      <w>40</w>
+      <h>272</h>
     </coordinates>
     <panel_attributes>m1=1
 m2=1..*
 lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;290.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;320.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>590</x>
-      <y>310</y>
-      <w>370</w>
-      <h>280</h>
+      <x>248</x>
+      <y>288</y>
+      <w>296</w>
+      <h>240</h>
     </coordinates>
     <panel_attributes>m1=1..*
 m2=1
 lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;70.0;350.0;260.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0;350.0;280.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>740</x>
-      <y>40</y>
-      <w>180</w>
-      <h>30</h>
+      <x>368</x>
+      <y>88</y>
+      <w>144</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>_CLASS DIAGRAM_
 fontsize=20</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>1008</x>
+      <y>264</y>
+      <w>112</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Note..
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>40</x>
+      <y>104</y>
+      <w>176</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>In Properties the acess level 
+represents first the get then the set.
+For example the property
++/- Name:string
+has public get and private set
+</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
