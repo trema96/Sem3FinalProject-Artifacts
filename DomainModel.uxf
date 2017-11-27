@@ -1,37 +1,161 @@
-<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><help_text>Space for diagram n1tteaches to</help_text><element><id>UMLClass</id><coordinates><x>192</x><y>366</y><w>210</w><h>70</h></coordinates><panel_attributes>Item
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <help_text>Space for diagram n1tteaches to</help_text>
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>370</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Item
 --
 Name
-Serial Number
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>532</x><y>186</y><w>210</w><h>80</h></coordinates><panel_attributes>Property
+Product Number
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>190</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Property
 --
 Name
-ValueType
-DefaultValue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>192</x><y>186</y><w>210</w><h>80</h></coordinates><panel_attributes>Type
+ValueType</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>190</y>
+      <w>210</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Type
 --
 Name
 
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>285</x><y>256</y><w>50</w><h>130</h></coordinates><panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>260</y>
+      <w>50</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=-
 m1=1
 m2=1..n
-is &gt;</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>395</x><y>386</y><w>160</w><h>50</h></coordinates><panel_attributes>lt=-
+is &gt;</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>390</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
 m1=1..n
-m2=1
-has  &gt;</panel_attributes><additional_attributes>140;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>382</x><y>60</y><w>190</w><h>30</h></coordinates><panel_attributes>_DOMAIN MODEL_
-fontsize=20</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>192</x><y>556</y><w>210</w><h>90</h></coordinates><panel_attributes>Producer
+m2=1..n
+has  &gt;</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>70</y>
+      <w>190</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>_DOMAIN MODEL_
+fontsize=20</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>560</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Producer
 --
 Name
 Id
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>285</x><y>426</y><w>60</w><h>150</h></coordinates><panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>320</x>
+      <y>430</y>
+      <w>70</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>lt=-
 m1=1
 m2=1..n
-&lt; has</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>395</x><y>206</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=-
+&lt; has</panel_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>430</x>
+      <y>210</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
 m1=1..n
 m2=1..n
-has &gt;</panel_attributes><additional_attributes>130;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>532</x><y>366</y><w>210</w><h>70</h></coordinates><panel_attributes>PropertyValue
+has &gt;</panel_attributes>
+    <additional_attributes>140.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>570</x>
+      <y>370</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>PropertyValue
 --
 Value
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>625</x><y>256</y><w>60</w><h>130</h></coordinates><panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>660</x>
+      <y>260</y>
+      <w>70</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=-
 m1=1..n
 m2=1
-has &gt;</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element></diagram>
+has &gt;</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>
