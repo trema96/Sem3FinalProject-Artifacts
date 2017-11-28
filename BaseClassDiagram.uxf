@@ -4,18 +4,16 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>24</x>
-      <y>184</y>
+      <x>0</x>
+      <y>200</y>
       <w>264</w>
-      <h>112</h>
+      <h>88</h>
     </coordinates>
     <panel_attributes>Item
 --
-- properties: IDictionary&lt;string, Property&gt;
---
-+/- Name: string
-+/- ProductN: string
-+/- Producer: ItemProducer
++ Name: string
++ ProductN: string
++ Producer: ItemProducer
 --
 + GetProperty(name: string): Property
 + SetProperty(name: string, value: string): bool</panel_attributes>
@@ -24,32 +22,30 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>520</x>
+      <x>496</x>
       <y>512</y>
       <w>288</w>
-      <h>56</h>
+      <h>40</h>
     </coordinates>
     <panel_attributes>ItemType
 --
-- defaultProperties: IDictionary&lt;string, Property&gt;
---
-+ GetProperty(name: string): Property
++ GetDefaultProperty(name: string): Property
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>576</x>
+      <x>552</x>
       <y>200</y>
       <w>176</w>
       <h>64</h>
     </coordinates>
     <panel_attributes>Property
 --
-+/+ Value: string
-+/- Name:  string
-+/- Type: IPropertyType
++ Value: string
++ Name:  string
++ Type: IPropertyType
 --
 
 </panel_attributes>
@@ -58,38 +54,37 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>48</x>
+      <x>24</x>
       <y>496</y>
       <w>256</w>
-      <h>80</h>
+      <h>64</h>
     </coordinates>
     <panel_attributes>ItemProducer
 --
-+/- Name: string
-+/- Email: string
-+/- Items: IList&lt;Item&gt;
++ Name: string
++ Email: string
++ Items: IList&lt;Item&gt;
 --
-+ AddItem(item: Item): void //TODO: check again
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>144</x>
-      <y>288</y>
+      <x>120</x>
+      <y>280</y>
       <w>40</w>
-      <h>224</h>
+      <h>232</h>
     </coordinates>
     <panel_attributes>m2=0..*
 m1=1
 lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;260.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;270.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
+      <x>256</x>
       <y>240</y>
       <w>312</w>
       <h>32</h>
@@ -102,7 +97,7 @@ lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>656</x>
+      <x>632</x>
       <y>256</y>
       <w>40</w>
       <h>272</h>
@@ -115,54 +110,26 @@ lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>248</x>
-      <y>288</y>
+      <x>224</x>
+      <y>280</y>
       <w>296</w>
-      <h>240</h>
+      <h>248</h>
     </coordinates>
     <panel_attributes>m1=1..*
 m2=1
 lt=&lt;&lt;&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0;350.0;280.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0;350.0;290.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>368</x>
+      <x>344</x>
       <y>88</y>
       <w>144</w>
       <h>24</h>
     </coordinates>
     <panel_attributes>_CLASS DIAGRAM_
 fontsize=20</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>1008</x>
-      <y>264</y>
-      <w>112</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>Note..
-bg=blue</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLNote</id>
-    <coordinates>
-      <x>40</x>
-      <y>104</y>
-      <w>176</w>
-      <h>72</h>
-    </coordinates>
-    <panel_attributes>In Properties the acess level 
-represents first the get then the set.
-For example the property
-+/- Name:string
-has public get and private set
-</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
