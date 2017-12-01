@@ -1,0 +1,37 @@
+<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><help_text>Space for diagram n1tteaches to</help_text><element><id>UMLClass</id><coordinates><x>161</x><y>400</y><w>210</w><h>90</h></coordinates><panel_attributes>Item
+--
+_ItemId : Int_
+Name : NVarchar
+Product Number : NVarchar
+● ItemTypeId : Int
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>561</x><y>220</y><w>210</w><h>80</h></coordinates><panel_attributes>Property
+--
+_PropertyId : Int_
+Name : Nvarchar
+● PropertyTypeId : Int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>91</x><y>240</y><w>90</w><h>270</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1..n</panel_attributes><additional_attributes>70;10;10;10;10;240;70;240</additional_attributes></element><element><id>Relation</id><coordinates><x>361</x><y>420</y><w>220</w><h>40</h></coordinates><panel_attributes>lt=-
+m1=1..n
+m2=1</panel_attributes><additional_attributes>200;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>161</x><y>590</y><w>210</w><h>90</h></coordinates><panel_attributes>Producer
+--
+_Email : NVarchar_
+Password : NVarchar
+Name : NVarchar</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>251</x><y>480</y><w>50</w><h>130</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1..n</panel_attributes><additional_attributes>10;110;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>561</x><y>380</y><w>210</w><h>80</h></coordinates><panel_attributes>ItemPropertyValue
+--
+_● PropertyId : Int_
+_● ItemId : Int_
+Value : NVarchar</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>451</x><y>270</y><w>130</w><h>170</h></coordinates><panel_attributes>lt=-
+m1=1..n
+m2=1</panel_attributes><additional_attributes>110;140;10;140;10;10;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>411</x><y>110</y><w>360</w><h>30</h></coordinates><panel_attributes>_RELATIONAL DATABASE MODEL_
+fontsize=20</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>161</x><y>220</y><w>210</w><h>80</h></coordinates><panel_attributes>ItemType
+--
+_ItemTypeId : Int_
+Name : NVarchar</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>911</x><y>220</y><w>210</w><h>90</h></coordinates><panel_attributes>PropertyType
+--
+_PropertyTypeId : Int_
+Name : NVarchar
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>761</x><y>240</y><w>170</w><h>70</h></coordinates><panel_attributes>lt=-
+m1=1
+m2=1..n</panel_attributes><additional_attributes>10;40;80;40;80;10;150;10</additional_attributes></element></diagram>
