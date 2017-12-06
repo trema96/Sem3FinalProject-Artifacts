@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="14.2">
-  <zoom_level>7</zoom_level>
+  <zoom_level>8</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>469</x>
-      <y>364</y>
-      <w>301</w>
-      <h>126</h>
+      <x>624</x>
+      <y>272</y>
+      <w>344</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>Item
 --
@@ -20,22 +20,23 @@
 + Item(name: string, productNumber: string, itemTypeName: string)
 + GetProperty(name: string): Property
 + SetProperty(name: string, value: string): bool
-+ validate(): bool</panel_attributes>
++ Validate(): bool</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>728</x>
-      <y>553</y>
-      <w>266</w>
-      <h>56</h>
+      <x>920</x>
+      <y>488</y>
+      <w>304</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>ItemType
 --
 - defaultProperties: IDictionary&lt;string, Property&gt;
++ Name: string
 --
-+ ItemType(defaultProperties: IDictionary&lt;string, Property&gt;)
++ ItemType(name: string, defaultProperties: IDictionary&lt;string, Property&gt;)
 + GetDefaultProperty(name: string): Property
 </panel_attributes>
     <additional_attributes/>
@@ -43,10 +44,10 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>826</x>
-      <y>413</y>
-      <w>224</w>
-      <h>70</h>
+      <x>1032</x>
+      <y>328</y>
+      <w>296</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>Property
 --
@@ -54,17 +55,17 @@
 + Name:  string
 + Type: IPropertyType
 --
-+ Property(value: string, name: string, type: string)
++ Property(value: string, name: string, type: IPropertyType)
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>763</x>
-      <y>448</y>
-      <w>77</w>
-      <h>28</h>
+      <x>960</x>
+      <y>368</y>
+      <w>88</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>m1=1
 m2=1..n
@@ -74,10 +75,10 @@ lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>896</x>
-      <y>476</y>
-      <w>35</w>
-      <h>91</h>
+      <x>1112</x>
+      <y>400</y>
+      <w>40</w>
+      <h>104</h>
     </coordinates>
     <panel_attributes>m1=1
 m2=1..n
@@ -87,10 +88,10 @@ lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>672</x>
-      <y>483</y>
-      <w>119</w>
-      <h>84</h>
+      <x>856</x>
+      <y>408</y>
+      <w>136</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>m1=1..n
 m2=1
@@ -100,10 +101,10 @@ lt=&lt;&lt;&lt;&lt;-</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>42</x>
-      <y>406</y>
-      <w>364</w>
-      <h>91</h>
+      <x>136</x>
+      <y>320</y>
+      <w>416</w>
+      <h>112</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
 IDBFacade
@@ -111,17 +112,18 @@ IDBFacade
 + GetItems(producerEmail: string): IList&lt;Item&gt;
 + AddItems(items: Item[], producerEmail: string): void
 + UpdateItems(items: Item[], producerEmail: string): void
-+ DeleteItems(itemsProductNumber: string[], producerEmail: string): void
-+ GetItemTypes(typeName: string): ItemType</panel_attributes>
++ DeleteItems(items: Item[], producerEmail: string): void
++ HasItem(item: Item, producerEmail:string): bool
++ GetItemType(typeName: string): ItemType</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>21</x>
-      <y>322</y>
-      <w>112</w>
-      <h>28</h>
+      <x>112</x>
+      <y>224</y>
+      <w>128</w>
+      <h>32</h>
     </coordinates>
     <panel_attributes>ConcreteDBFacade
 --
@@ -131,10 +133,10 @@ IDBFacade
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>70</x>
-      <y>343</y>
-      <w>21</w>
-      <h>77</h>
+      <x>168</x>
+      <y>248</y>
+      <w>24</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
@@ -142,15 +144,15 @@ IDBFacade
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>161</x>
-      <y>294</y>
-      <w>238</w>
-      <h>70</h>
+      <x>272</x>
+      <y>192</y>
+      <w>304</w>
+      <h>80</h>
     </coordinates>
     <panel_attributes>CachingDBFacade
 --
 - component: IDBFacade
-- cachedItems: IDictionary&lt;string, IList&lt;Item\&gt;&gt;
+- cachedItems: IDictionary&lt;string, IDictionary&lt;string, Item\&gt;&gt;
 - cachedItemTypes: IDictionary&lt;string, ItemType&gt;
 --
 + CachingDBFacade(component: IDBFacade)</panel_attributes>
@@ -159,10 +161,10 @@ IDBFacade
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>273</x>
-      <y>357</y>
-      <w>21</w>
-      <h>63</h>
+      <x>400</x>
+      <y>264</y>
+      <w>24</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
@@ -170,27 +172,28 @@ IDBFacade
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>0</x>
-      <y>210</y>
-      <w>273</w>
-      <h>70</h>
+      <x>112</x>
+      <y>88</y>
+      <w>424</w>
+      <h>88</h>
     </coordinates>
     <panel_attributes>CheckingDBFacade
 --
 - component: IDBFacade
 --
 + CheckingDBFacade(component: IDBFacade)
-- CheckAllCanBeAdded(items: Item[], producer :ItemProducer): bool
-- CheckAllCanBeEdited(items: Item[], producer :ItemProducer): bool</panel_attributes>
+- CheckAllCanBeAdded(items: Item[], producerEmail :string): void
+- CheckAllCanBeUpdated(items: Item[], producerEmail :string): void
+- CheckAllCanBeDeleted(itemsProductNumber: string[], producerEmail :string): void</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>140</x>
-      <y>273</y>
-      <w>21</w>
-      <h>147</h>
+      <x>248</x>
+      <y>168</y>
+      <w>24</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;190.0;10.0;10.0</additional_attributes>
@@ -198,10 +201,10 @@ IDBFacade
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>21</x>
-      <y>595</y>
-      <w>413</w>
-      <h>84</h>
+      <x>112</x>
+      <y>536</y>
+      <w>472</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>WebAPIController
 --
@@ -209,17 +212,17 @@ IDBFacade
 + &lt;&lt;HTTP Get&gt;&gt;	GetItems(): IActionResult
 + &lt;&lt;HTTP Post&gt;&gt; AddItems(items: Item[]): IActionResult
 + &lt;&lt;HTTP Put&gt;&gt; UpdateItems(items: Item[]): IActionResult
-+ &lt;&lt;HTTP Delete&gt;&gt; DeleteItems(itemsProductNumber: string[]): IActionResult
++ &lt;&lt;HTTP Delete&gt;&gt; DeleteItems(items: Item[]): IActionResult
 + &lt;&lt;HTTP Post&gt;&gt; CreateAccount(email: string, password: string, producer: string): IActionResult</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>756</x>
-      <y>294</y>
-      <w>126</w>
-      <h>56</h>
+      <x>952</x>
+      <y>192</y>
+      <w>144</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
 IPropertyType
@@ -231,10 +234,10 @@ Validate(value: string): bool</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>854</x>
-      <y>343</y>
-      <w>21</w>
-      <h>84</h>
+      <x>1064</x>
+      <y>248</y>
+      <w>24</w>
+      <h>96</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
@@ -242,10 +245,10 @@ Validate(value: string): bool</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>875</x>
-      <y>329</y>
-      <w>42</w>
-      <h>21</h>
+      <x>1088</x>
+      <y>232</y>
+      <w>48</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;40.0;10.0</additional_attributes>
@@ -253,10 +256,10 @@ Validate(value: string): bool</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>903</x>
-      <y>329</y>
-      <w>77</w>
-      <h>21</h>
+      <x>1120</x>
+      <y>232</y>
+      <w>88</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>ResolutionType</panel_attributes>
     <additional_attributes/>
@@ -264,10 +267,10 @@ Validate(value: string): bool</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>875</x>
-      <y>301</y>
-      <w>42</w>
-      <h>21</h>
+      <x>1088</x>
+      <y>200</y>
+      <w>48</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;40.0;10.0</additional_attributes>
@@ -275,10 +278,10 @@ Validate(value: string): bool</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>903</x>
-      <y>301</y>
-      <w>77</w>
-      <h>21</h>
+      <x>1120</x>
+      <y>200</y>
+      <w>88</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>BoolType</panel_attributes>
     <additional_attributes/>
@@ -286,10 +289,10 @@ Validate(value: string): bool</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>672</x>
-      <y>231</y>
-      <w>259</w>
-      <h>42</h>
+      <x>856</x>
+      <y>120</y>
+      <w>296</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>&lt;&lt;interface&gt;&gt;
 IPropertyTypeFactory
@@ -300,10 +303,10 @@ IPropertyTypeFactory
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>819</x>
-      <y>147</y>
-      <w>196</w>
-      <h>42</h>
+      <x>1024</x>
+      <y>32</y>
+      <w>224</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>PropertyTypeFactory
 --
@@ -313,10 +316,10 @@ IPropertyTypeFactory
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>889</x>
-      <y>182</y>
-      <w>21</w>
-      <h>63</h>
+      <x>1104</x>
+      <y>64</y>
+      <w>24</w>
+      <h>72</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
     <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
@@ -324,10 +327,10 @@ IPropertyTypeFactory
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>805</x>
-      <y>266</y>
-      <w>21</w>
-      <h>42</h>
+      <x>1008</x>
+      <y>160</y>
+      <w>24</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
@@ -335,10 +338,10 @@ IPropertyTypeFactory
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>399</x>
-      <y>441</y>
-      <w>84</w>
-      <h>21</h>
+      <x>544</x>
+      <y>360</y>
+      <w>96</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
@@ -346,58 +349,37 @@ IPropertyTypeFactory
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>322</y>
-      <w>287</w>
-      <h>56</h>
+      <x>568</x>
+      <y>224</y>
+      <w>296</w>
+      <h>64</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m2=0..n
 m1=1</panel_attributes>
-    <additional_attributes>10.0;10.0;370.0;10.0;370.0;60.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>924</x>
-      <y>259</y>
-      <w>91</w>
-      <h>168</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;110.0;10.0;110.0;220.0</additional_attributes>
+    <additional_attributes>10.0;10.0;330.0;10.0;330.0;60.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>161</x>
-      <y>525</y>
-      <w>147</w>
-      <h>35</h>
+      <x>256</x>
+      <y>456</y>
+      <w>216</w>
+      <h>48</h>
     </coordinates>
     <panel_attributes>_ApplicationState_
 --
-_+ DBFacade: IDBFacade_</panel_attributes>
+_+ DBFacade: IDBFacade_
+_+ PropTypeFactory: IPropertyTypeFactory_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>231</x>
-      <y>553</y>
-      <w>21</w>
+      <x>352</x>
+      <y>496</y>
+      <w>24</w>
       <h>56</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>231</x>
-      <y>490</y>
-      <w>21</w>
-      <h>49</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
@@ -405,21 +387,21 @@ _+ DBFacade: IDBFacade_</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>301</x>
-      <y>483</y>
-      <w>231</w>
-      <h>77</h>
+      <x>352</x>
+      <y>424</y>
+      <w>24</w>
+      <h>48</h>
     </coordinates>
-    <panel_attributes>lt=-&gt;</panel_attributes>
-    <additional_attributes>310.0;10.0;310.0;90.0;10.0;90.0</additional_attributes>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;40.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>399</x>
-      <y>126</y>
-      <w>196</w>
-      <h>21</h>
+      <x>544</x>
+      <y>0</y>
+      <w>224</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>_DESIGN CLASS DIAGRAM_
 fontsize=20</panel_attributes>
@@ -428,10 +410,10 @@ fontsize=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>945</x>
-      <y>182</y>
-      <w>21</w>
-      <h>133</h>
+      <x>1168</x>
+      <y>64</y>
+      <w>24</w>
+      <h>152</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;170.0;10.0;10.0</additional_attributes>
@@ -439,12 +421,56 @@ fontsize=20</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>973</x>
-      <y>182</y>
-      <w>35</w>
-      <h>175</h>
+      <x>1200</x>
+      <y>64</y>
+      <w>40</w>
+      <h>200</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;230.0;30.0;230.0;30.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>464</x>
+      <y>48</y>
+      <w>576</w>
+      <h>432</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>700.0;10.0;180.0;10.0;180.0;520.0;10.0;520.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>528</x>
+      <y>424</y>
+      <w>408</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>490.0;110.0;10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>112</x>
+      <y>248</y>
+      <w>160</w>
+      <h>248</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>180.0;290.0;10.0;290.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>136</x>
+      <y>248</y>
+      <w>504</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>610.0;40.0;10.0;40.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>
