@@ -1,215 +1,46 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="14.2">
-  <help_text>Space for diagram n1tteaches to</help_text>
-  <zoom_level>7</zoom_level>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>455</x>
-      <y>287</y>
-      <w>147</w>
-      <h>77</h>
-    </coordinates>
-    <panel_attributes>Item
+<diagram program="umletino" version="14.2"><zoom_level>10</zoom_level><help_text>Space for diagram n1tteaches to</help_text><element><id>UMLClass</id><coordinates><x>446</x><y>428</y><w>210</w><h>110</h></coordinates><panel_attributes>Item
 --
 _ItemId : Int_
 Name : NVarchar
-Product Number : NVarchar
+ProductNumber : NVarchar
 ● ItemTypeId : Int
 ● ProducerEmail : Nvarchr
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>686</x>
-      <y>175</y>
-      <w>147</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>Property
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>766</x><y>208</y><w>210</w><h>80</h></coordinates><panel_attributes>Property
 --
 _PropertyId : Int_
 Name : Nvarchar
-● PropertyTypeId : Int</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>385</x>
-      <y>175</y>
-      <w>84</w>
-      <h>189</h>
-    </coordinates>
-    <panel_attributes>lt=-
+● PropertyTypeId : Int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>76</x><y>208</y><w>390</w><h>330</h></coordinates><panel_attributes>lt=-
 m1=1
-m2=1..n</panel_attributes>
-    <additional_attributes>10.0;10.0;20.0;10.0;20.0;240.0;100.0;240.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>595</x>
-      <y>301</y>
-      <w>105</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=-
+m2=1..n</panel_attributes><additional_attributes>60;10;10;10;10;300;370;300</additional_attributes></element><element><id>Relation</id><coordinates><x>646</x><y>448</y><w>140</w><h>40</h></coordinates><panel_attributes>lt=-
 m1=1..n
-m2=1</panel_attributes>
-    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>455</x>
-      <y>413</y>
-      <w>147</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>Producer
+m2=1</panel_attributes><additional_attributes>120;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>136</x><y>308</y><w>210</w><h>90</h></coordinates><panel_attributes>Producer
 --
 _Email : NVarchar_
-Password : NVarchar
-Name : NVarchar</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>518</x>
-      <y>357</y>
-      <w>35</w>
-      <h>70</h>
-    </coordinates>
-    <panel_attributes>lt=-
+Passphrase : NVarchar
+Name : NVarchar</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>336</x><y>338</y><w>130</w><h>220</h></coordinates><panel_attributes>lt=-
 m1=1
-m2=1..n</panel_attributes>
-    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>686</x>
-      <y>273</y>
-      <w>147</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>ItemPropertyValue
+m2=1..n</panel_attributes><additional_attributes>10;10;50;10;50;190;110;190</additional_attributes></element><element><id>UMLClass</id><coordinates><x>766</x><y>408</y><w>210</w><h>80</h></coordinates><panel_attributes>ItemPropertyValue
 --
 _● PropertyId : Int_
 _● ItemId : Int_
-Value : NVarchar</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>651</x>
-      <y>196</y>
-      <w>49</w>
-      <h>119</h>
-    </coordinates>
-    <panel_attributes>lt=-
+Value : NVarchar</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>966</x><y>228</y><w>90</w><h>240</h></coordinates><panel_attributes>lt=-
 m1=1..n
-m2=1</panel_attributes>
-    <additional_attributes>50.0;140.0;40.0;140.0;40.0;10.0;50.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>581</x>
-      <y>84</y>
-      <w>252</w>
-      <h>21</h>
-    </coordinates>
-    <panel_attributes>_RELATIONAL DATABASE MODEL_
-fontsize=20</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>245</x>
-      <y>161</y>
-      <w>147</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>ItemType
+m2=1</panel_attributes><additional_attributes>10;210;70;210;70;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>366</x><y>88</y><w>360</w><h>30</h></coordinates><panel_attributes>_RELATIONAL DATABASE MODEL_
+fontsize=20</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>136</x><y>188</y><w>210</w><h>80</h></coordinates><panel_attributes>ItemType
 --
 _ItemTypeId : Int_
-Name : NVarchar</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>889</x>
-      <y>196</y>
-      <w>147</w>
-      <h>63</h>
-    </coordinates>
-    <panel_attributes>PropertyType
+Name : NVarchar</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>766</x><y>308</y><w>210</w><h>80</h></coordinates><panel_attributes>PropertyType
 --
 _PropertyTypeId : Int_
 Name : NVarchar
-</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>826</x>
-      <y>210</y>
-      <w>77</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=-
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>686</x><y>258</y><w>100</w><h>110</h></coordinates><panel_attributes>lt=-
 m1=1
-m2=1..n</panel_attributes>
-    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>455</x>
-      <y>161</y>
-      <w>147</w>
-      <h>56</h>
-    </coordinates>
-    <panel_attributes>ItemTypeDefaultProperty
+m2=1..n</panel_attributes><additional_attributes>80;10;10;10;10;80;80;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>456</x><y>188</y><w>210</w><h>80</h></coordinates><panel_attributes>ItemTypeDefaultProperty
 --
 _● ItemTypeId : Int_
 _● PropertyId : Int_
-Value : NVarchar</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>385</x>
-      <y>175</y>
-      <w>84</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=-
+Value : NVarchar</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>336</x><y>208</y><w>140</w><h>40</h></coordinates><panel_attributes>lt=-
 m1=1..n
-m2=1</panel_attributes>
-    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>595</x>
-      <y>189</y>
-      <w>105</w>
-      <h>28</h>
-    </coordinates>
-    <panel_attributes>lt=-
+m2=1</panel_attributes><additional_attributes>120;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>656</x><y>228</y><w>130</w><h>40</h></coordinates><panel_attributes>lt=-
 m1=1..n
-m2=1</panel_attributes>
-    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
-  </element>
-</diagram>
+m2=1</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element></diagram>
