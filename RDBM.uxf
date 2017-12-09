@@ -72,7 +72,6 @@ m2=1</panel_attributes>
     <panel_attributes>Producer
 --
 _Email : NVarchar_
-Password : NVarchar
 Name : NVarchar</panel_attributes>
     <additional_attributes/>
   </element>
