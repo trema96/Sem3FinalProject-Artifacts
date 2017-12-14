@@ -167,8 +167,8 @@ Name : NVarchar
       <h>110</h>
     </coordinates>
     <panel_attributes>lt=-
-m1=1
-m2=1..n</panel_attributes>
+m1=1..n
+m2=1</panel_attributes>
     <additional_attributes>80.0;10.0;10.0;10.0;10.0;80.0;80.0;80.0</additional_attributes>
   </element>
   <element>
@@ -208,8 +208,8 @@ m2=1</panel_attributes>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=-
-m1=1..n
-m2=1</panel_attributes>
+m1=1
+m2=1..n</panel_attributes>
     <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
   </element>
 </diagram>

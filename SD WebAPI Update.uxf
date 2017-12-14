@@ -6,7 +6,7 @@
     <id>UMLClass</id>
     <coordinates>
       <x>231</x>
-      <y>220</y>
+      <y>187</y>
       <w>176</w>
       <h>22</h>
     </coordinates>
@@ -17,7 +17,7 @@
     <id>Relation</id>
     <coordinates>
       <x>11</x>
-      <y>253</y>
+      <y>220</y>
       <w>319</w>
       <h>44</h>
     </coordinates>
@@ -28,19 +28,19 @@ UpdateItems(items)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>561</x>
-      <y>220</y>
-      <w>165</w>
+      <x>583</x>
+      <y>187</y>
+      <w>121</w>
       <h>22</h>
     </coordinates>
-    <panel_attributes>_:ApplicationSomething_</panel_attributes>
+    <panel_attributes>_:ApplicationState_</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>308</x>
-      <y>242</y>
+      <y>209</y>
       <w>33</w>
       <h>737</h>
     </coordinates>
@@ -51,7 +51,7 @@ UpdateItems(items)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>627</x>
-      <y>242</y>
+      <y>209</y>
       <w>44</w>
       <h>737</h>
     </coordinates>
@@ -62,7 +62,7 @@ UpdateItems(items)</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>308</x>
-      <y>275</y>
+      <y>242</y>
       <w>22</w>
       <h>660</h>
     </coordinates>
@@ -74,7 +74,7 @@ bg=white</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>638</x>
-      <y>352</y>
+      <y>319</y>
       <w>22</w>
       <h>33</h>
     </coordinates>
@@ -86,7 +86,7 @@ bg=white</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>319</x>
-      <y>330</y>
+      <y>297</y>
       <w>341</w>
       <h>44</h>
     </coordinates>
@@ -97,9 +97,9 @@ GetDBFacade()</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>891</x>
-      <y>220</y>
-      <w>132</w>
+      <x>880</x>
+      <y>187</y>
+      <w>154</w>
       <h>22</h>
     </coordinates>
     <panel_attributes>_:CheckingDBFacade_</panel_attributes>
@@ -109,7 +109,7 @@ GetDBFacade()</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>946</x>
-      <y>242</y>
+      <y>209</y>
       <w>33</w>
       <h>737</h>
     </coordinates>
@@ -120,7 +120,7 @@ GetDBFacade()</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>946</x>
-      <y>418</y>
+      <y>385</y>
       <w>22</w>
       <h>462</h>
     </coordinates>
@@ -132,7 +132,7 @@ bg=white</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>319</x>
-      <y>396</y>
+      <y>363</y>
       <w>649</w>
       <h>44</h>
     </coordinates>
@@ -144,7 +144,7 @@ bg=white</panel_attributes>
     <id>UMLSpecialState</id>
     <coordinates>
       <x>0</x>
-      <y>264</y>
+      <y>231</y>
       <w>22</w>
       <h>22</h>
     </coordinates>
@@ -155,9 +155,9 @@ bg=white</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1188</x>
-      <y>220</y>
-      <w>132</w>
+      <x>1177</x>
+      <y>187</y>
+      <w>154</w>
       <h>22</h>
     </coordinates>
     <panel_attributes>_:CachingDBFacade_</panel_attributes>
@@ -166,9 +166,9 @@ bg=white</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1430</x>
-      <y>220</y>
-      <w>132</w>
+      <x>1419</x>
+      <y>187</y>
+      <w>154</w>
       <h>22</h>
     </coordinates>
     <panel_attributes>_:ConcreteDBFacade_</panel_attributes>
@@ -178,7 +178,7 @@ bg=white</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1232</x>
-      <y>242</y>
+      <y>209</y>
       <w>33</w>
       <h>737</h>
     </coordinates>
@@ -189,7 +189,7 @@ bg=white</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1485</x>
-      <y>242</y>
+      <y>209</y>
       <w>33</w>
       <h>737</h>
     </coordinates>
@@ -200,7 +200,7 @@ bg=white</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>957</x>
-      <y>583</y>
+      <y>550</y>
       <w>297</w>
       <h>44</h>
     </coordinates>
@@ -212,7 +212,7 @@ UpdateItems(items, itemProducer)</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>1232</x>
-      <y>605</y>
+      <y>572</y>
       <w>22</w>
       <h>264</h>
     </coordinates>
@@ -224,7 +224,7 @@ bg=white</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>1485</x>
-      <y>627</y>
+      <y>594</y>
       <w>22</w>
       <h>154</h>
     </coordinates>
@@ -236,7 +236,7 @@ bg=white</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1243</x>
-      <y>605</y>
+      <y>572</y>
       <w>264</w>
       <h>44</h>
     </coordinates>
@@ -248,7 +248,7 @@ EditItems(items, itemProducer)</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>0</x>
-      <y>803</y>
+      <y>770</y>
       <w>330</w>
       <h>44</h>
     </coordinates>
@@ -260,7 +260,7 @@ EditItems(items, itemProducer)</panel_attributes>
     <id>UMLFrame</id>
     <coordinates>
       <x>264</x>
-      <y>770</y>
+      <y>737</y>
       <w>220</w>
       <h>154</h>
     </coordinates>
@@ -272,7 +272,7 @@ layer=-1</panel_attributes>
     <id>UMLFrame</id>
     <coordinates>
       <x>264</x>
-      <y>847</y>
+      <y>814</y>
       <w>220</w>
       <h>77</h>
     </coordinates>
@@ -283,7 +283,7 @@ layer=-1</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>330</x>
-      <y>770</y>
+      <y>737</y>
       <w>110</w>
       <h>22</h>
     </coordinates>
@@ -297,7 +297,7 @@ layer=-1</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>0</x>
-      <y>869</y>
+      <y>836</y>
       <w>330</w>
       <h>44</h>
     </coordinates>
@@ -309,7 +309,7 @@ layer=-1</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>319</x>
-      <y>363</y>
+      <y>330</y>
       <w>341</w>
       <h>44</h>
     </coordinates>
@@ -321,7 +321,7 @@ return DBFacade</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>957</x>
-      <y>418</y>
+      <y>385</y>
       <w>154</w>
       <h>66</h>
     </coordinates>
@@ -333,7 +333,7 @@ Check()</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>957</x>
-      <y>462</y>
+      <y>429</y>
       <w>22</w>
       <h>22</h>
     </coordinates>
@@ -345,7 +345,7 @@ bg=white</panel_attributes>
     <id>UMLFrame</id>
     <coordinates>
       <x>902</x>
-      <y>495</y>
+      <y>462</y>
       <w>220</w>
       <h>154</h>
     </coordinates>
@@ -357,7 +357,7 @@ layer=-1</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>968</x>
-      <y>495</y>
+      <y>462</y>
       <w>88</w>
       <h>22</h>
     </coordinates>
@@ -371,7 +371,7 @@ layer=-1</panel_attributes>
     <id>UMLFrame</id>
     <coordinates>
       <x>902</x>
-      <y>572</y>
+      <y>539</y>
       <w>220</w>
       <h>77</h>
     </coordinates>
@@ -382,7 +382,7 @@ layer=-1</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>319</x>
-      <y>517</y>
+      <y>484</y>
       <w>660</w>
       <h>44</h>
     </coordinates>
@@ -394,7 +394,7 @@ layer=-1</panel_attributes>
     <id>UMLFrame</id>
     <coordinates>
       <x>1441</x>
-      <y>715</y>
+      <y>682</y>
       <w>220</w>
       <h>55</h>
     </coordinates>
@@ -406,7 +406,7 @@ layer=-1</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>1507</x>
-      <y>715</y>
+      <y>682</y>
       <w>88</w>
       <h>22</h>
     </coordinates>
@@ -420,7 +420,7 @@ layer=-1</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1496</x>
-      <y>638</y>
+      <y>605</y>
       <w>209</w>
       <h>66</h>
     </coordinates>
@@ -432,7 +432,7 @@ UpdateDatabase()</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>1496</x>
-      <y>682</y>
+      <y>649</y>
       <w>22</w>
       <h>22</h>
     </coordinates>
@@ -444,7 +444,7 @@ bg=white</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>319</x>
-      <y>726</y>
+      <y>693</y>
       <w>1188</w>
       <h>44</h>
     </coordinates>
@@ -456,7 +456,7 @@ Database exception</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1243</x>
-      <y>770</y>
+      <y>737</y>
       <w>187</w>
       <h>66</h>
     </coordinates>
@@ -468,7 +468,7 @@ UpdateCache()</panel_attributes>
     <id>UMLGeneric</id>
     <coordinates>
       <x>1243</x>
-      <y>814</y>
+      <y>781</y>
       <w>22</w>
       <h>22</h>
     </coordinates>
